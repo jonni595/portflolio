@@ -6,27 +6,39 @@
 
   &__content {
     @include set.center-element(column, center, space-evenly);
-    @include set.dimensions(1300px, 190px);
+    @include set.dimensions(100%, 190px);
   }
 
   &__container-icons {
     @include set.center-element(row, center, space-around);
     @include set.dimensions(200px, 50px);
-    // border: 1px solid tomato;
 
     .tooltip {
       position: relative;
 
-			&:hover .tooltip-box1 {
-				display: inline-block;
-				visibility: visible;
-				opacity: 1;
-			}
+      &:hover .tooltip-box1 {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+      }
 
-      .tooltip-box1 {
-				// display: none;
-				visibility: hidden;
-				opacity: 0;
+      &:hover .tooltip-box2 {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &:hover .tooltip-box3 {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .tooltip-box1,
+      .tooltip-box2,
+      .tooltip-box3 {
+        visibility: hidden;
+        opacity: 0;
         position: absolute;
         background-color: #000;
         line-height: 20px;
@@ -36,9 +48,46 @@
         font-size: 14px;
         padding: 5px 10px;
         border-radius: 5px;
+      }
+
+      .tooltip-box1 {
         left: -55px;
         bottom: 50px;
-				transition: opacity .9s ease;
+        transition: opacity 0.9s ease;
+
+        &::after {
+          content: "";
+          display: block;
+          border-top: 7px solid #000;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          position: absolute;
+          bottom: -5px;
+          left: calc(50% - 7px);
+        }
+      }
+
+      .tooltip-box2 {
+        left: -85px;
+        bottom: 55px;
+        transition: opacity 0.9s ease;
+
+        &::after {
+          content: "";
+          display: block;
+          border-top: 7px solid #000;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          position: absolute;
+          bottom: -5px;
+          left: calc(50% - 7px);
+        }
+      }
+
+      .tooltip-box3 {
+        left: -20px;
+        bottom: 55px;
+        transition: opacity 0.9s ease;
 
         &::after {
           content: "";

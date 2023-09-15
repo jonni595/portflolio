@@ -226,7 +226,7 @@ svg {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 1300px;
+  width: 100%;
   height: 190px;
 }
 .footer__container-icons {
@@ -245,7 +245,19 @@ svg {
   visibility: visible;
   opacity: 1;
 }
-.footer__container-icons .tooltip .tooltip-box1 {
+.footer__container-icons .tooltip:hover .tooltip-box2 {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+}
+.footer__container-icons .tooltip:hover .tooltip-box3 {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+}
+.footer__container-icons .tooltip .tooltip-box1,
+.footer__container-icons .tooltip .tooltip-box2,
+.footer__container-icons .tooltip .tooltip-box3 {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -257,11 +269,43 @@ svg {
   font-size: 14px;
   padding: 5px 10px;
   border-radius: 5px;
+}
+.footer__container-icons .tooltip .tooltip-box1 {
   left: -55px;
   bottom: 50px;
   transition: opacity 0.9s ease;
 }
 .footer__container-icons .tooltip .tooltip-box1::after {
+  content: "";
+  display: block;
+  border-top: 7px solid #000;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 7px);
+}
+.footer__container-icons .tooltip .tooltip-box2 {
+  left: -85px;
+  bottom: 55px;
+  transition: opacity 0.9s ease;
+}
+.footer__container-icons .tooltip .tooltip-box2::after {
+  content: "";
+  display: block;
+  border-top: 7px solid #000;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 7px);
+}
+.footer__container-icons .tooltip .tooltip-box3 {
+  left: -20px;
+  bottom: 55px;
+  transition: opacity 0.9s ease;
+}
+.footer__container-icons .tooltip .tooltip-box3::after {
   content: "";
   display: block;
   border-top: 7px solid #000;

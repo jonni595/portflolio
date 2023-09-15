@@ -23,7 +23,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaLinkedinIn className="icon-styles" />
-            {/* <span className='tooltip-box2' >https://www.linkedin.com/in/jonathan-dajome-rodriguez-7801b21b0/</span> */}
+            <span className='tooltip-box2'>JonathanDajomeRodriguez</span>
           </a>
           <a
             className="tooltip"
@@ -32,7 +32,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaGithubAlt className="icon-styles" />
-            {/* <span className='tooltip-box3' >https://github.com/jonni595</span> */}
+            <span className='tooltip-box3'>jonni595</span>
           </a>
         </div>
         <div className="footer__creator">
