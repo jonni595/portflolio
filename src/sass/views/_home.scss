@@ -1,9 +1,5 @@
 @use "../utils" as set;
 
-.container {
-  width: 100%;
-}
-
 .profile {
   @include set.center-element;
   @include set.dimensions(100%, calc(100vh - 70px));
@@ -35,7 +31,21 @@
   }
 }
 
-.projects {
+.project {
+  @include set.dimensions(100%, 100vh);
+  @include set.center-element;
+  flex-wrap: wrap;
+  background-color: set.$card-bg;
+  padding: 0 10px;
+
+  .card:last-child {
+    margin-right: 0;
+  }
+}
+
+
+
+/* .projects {
   @include set.dimensions(100%, 100vh);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -62,4 +72,4 @@
       margin: 0;
     }
   }
-}
+} */
