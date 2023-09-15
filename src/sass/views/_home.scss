@@ -42,34 +42,3 @@
     margin-right: 0;
   }
 }
-
-
-
-/* .projects {
-  @include set.dimensions(100%, 100vh);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 1fr;
-  grid-column-gap: 10px;
-  grid-template-areas: "title title title";
-  background-color: set.$card-bg;
-
-  &__title {
-    grid-column: title / title;
-    @include set.center-element;
-
-    h2 {
-      font-size: map-get(set.$font-sizes, large);
-      font-weight: map-get(set.$font-weight, medium);
-    }
-  }
-
-  &__item {
-    @include set.dimensions(100%, 600px);
-    @include set.center-element;
-
-    span:last-child {
-      margin: 0;
-    }
-  }
-} */
