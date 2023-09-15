@@ -1,0 +1,9 @@
+@use "../utils" as set;
+
+.header {
+  @include set.dimensions(100%, 70px);
+  @include set.center-element;
+  background-color: set.$bg-color;
+  color: set.$primary;
+  box-shadow: 0 2px 5px 1px rgba(66, 66, 66, 0.9);
+}

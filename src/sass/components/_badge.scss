@@ -1,0 +1,9 @@
+@use "../utils" as set;
+
+.badge {
+  padding: 8px 10px;
+  background-color: set.$bg-button;
+  border-radius: 3px;
+  font-size: map-get(set.$font-sizes, small);
+  margin-right: 8px;
+}

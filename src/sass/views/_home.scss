@@ -1,0 +1,65 @@
+@use "../utils" as set;
+
+.container {
+  width: 100%;
+}
+
+.profile {
+  @include set.center-element;
+  @include set.dimensions(100%, calc(100vh - 70px));
+
+  &__item {
+    @include set.center-element(column, center, space-evenly);
+    @include set.dimensions(800px, 500px);
+
+    .profile__title {
+      font-size: map-get(set.$font-sizes, x-large);
+      font-weight: map-get(set.$font-weight, large);
+
+      &::before {
+        content: "<";
+        color: rgb(85, 0, 85);
+      }
+
+      &::after {
+        content: " />";
+        color: rgb(85, 0, 85);
+      }
+    }
+
+    .profile__subtitle {
+      font-size: map-get(set.$font-sizes, medium);
+      color: set.$secondary;
+      font-weight: map-get(set.$font-weight, small);
+    }
+  }
+}
+
+.projects {
+  @include set.dimensions(100%, 100vh);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 1fr;
+  grid-column-gap: 10px;
+  grid-template-areas: "title title title";
+  background-color: set.$card-bg;
+
+  &__title {
+    grid-column: title / title;
+    @include set.center-element;
+
+    h2 {
+      font-size: map-get(set.$font-sizes, large);
+      font-weight: map-get(set.$font-weight, medium);
+    }
+  }
+
+  &__item {
+    @include set.dimensions(100%, 600px);
+    @include set.center-element;
+
+    span:last-child {
+      margin: 0;
+    }
+  }
+}
