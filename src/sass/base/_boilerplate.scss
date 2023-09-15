@@ -32,8 +32,10 @@ figure {
 
 ::selection {
   background-color: set.$selection;
+  color: set.$primary;
 }
 
 ::-moz-selection {
   background-color: set.$selection;
+  color: set.$primary;
 }

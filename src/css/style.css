@@ -30,10 +30,12 @@ figure {
 
 ::selection {
   background-color: #80A6E4;
+  color: #fffffe;
 }
 
 ::-moz-selection {
   background-color: #80A6E4;
+  color: #fffffe;
 }
 
 a {
@@ -126,19 +128,18 @@ svg {
   border-radius: 8px;
   background-color: #16161a;
   transition: all 0.5s ease-in-out;
-  /* &:hover {
-    border: 2px set.$bg-button;
-    color: #000;
-    box-shadow: 0px 0px 80px 10px rgba(set.$bg-button, 0.5);
-    transform: scale(0.9);
-  } */
 }
 .card span:last-child {
   margin-right: 0;
 }
+.card:hover .card__image {
+  transform: scale(1.09);
+  cursor: pointer;
+}
 .card__image {
   width: 398px;
   height: 300px;
+  transition: transform 0.8s;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -213,6 +214,74 @@ svg {
   background-color: #16161a;
   color: #fffffe;
   box-shadow: 0 0px 5px 1px rgba(66, 66, 66, 0.9);
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  padding: 30px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1300px;
+  height: 190px;
+}
+.footer__container-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  height: 50px;
+}
+.footer__container-icons .tooltip {
+  position: relative;
+}
+.footer__container-icons .tooltip:hover .tooltip-box1 {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+}
+.footer__container-icons .tooltip .tooltip-box1 {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #000;
+  line-height: 20px;
+  z-index: 500;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  left: -55px;
+  bottom: 50px;
+  transition: opacity 0.9s ease;
+}
+.footer__container-icons .tooltip .tooltip-box1::after {
+  content: "";
+  display: block;
+  border-top: 7px solid #000;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 7px);
+}
+.footer__container-icons a .icon-styles {
+  font-size: 4.375rem;
+  color: #fffffe;
+}
+.footer__creator p {
+  font-size: 2rem;
+  color: #94a1b2;
+}
+.footer__creator .creator {
+  font-size: 1.5625rem;
+  color: #94a1b2;
 }
 
 nav {
