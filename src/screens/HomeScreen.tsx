@@ -21,26 +21,26 @@ const HomeScreen = () => {
           url={url1}
           altImage="Project 1"
           title="Quiz App"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae"
+          description="Challenge your knowledge and show how much you know about web development"
         >
-          <Badge lang1="React" lang2="Sass" lang3="TypeScript" />
+          <Badge lang1="HTML" lang2="CSS" lang3="Vanilla JS" />
         </Card>
         <Card
           url={url2}
           altImage="Project 2"
-          title="Validation Form"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae"
+          title="Todo List"
+          description="A Todo list app made in React is a web application that allows users to create and manage a to-do list."
         >
-          <Badge lang1="HTML" lang2="CSS" lang3="Vanilla JS" />
+          <Badge lang1="HTML" lang2="CSS" lang3="JavaScript" />
         </Card>
 
         <Card
           url={url3}
           altImage="Project 3"
-          title="YouTube Clone"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae"
+          title="Movie App"
+          description="An application for film lovers who want to find information about movies"
         >
-          <Badge lang1="HTML" lang2="Bootstrap" lang3="Sass" />
+          <Badge lang1="Vanilla JS" lang2="API REST" lang3="CSS" />
         </Card>
       </section>
     </>

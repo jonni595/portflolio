@@ -40,11 +40,11 @@
         visibility: hidden;
         opacity: 0;
         position: absolute;
-        background-color: #000;
+        background-color: set.$card-bg;
         line-height: 20px;
         z-index: 500;
         text-align: center;
-        color: #fff;
+        color: set.$primary;
         font-size: 14px;
         padding: 5px 10px;
         border-radius: 5px;
@@ -53,12 +53,12 @@
       .tooltip-box1 {
         left: -55px;
         bottom: 50px;
-        transition: opacity 0.9s ease;
+        transition: opacity .8s ease;
 
         &::after {
           content: "";
           display: block;
-          border-top: 7px solid #000;
+          border-top: 7px solid set.$card-bg;
           border-left: 7px solid transparent;
           border-right: 7px solid transparent;
           position: absolute;
@@ -70,12 +70,12 @@
       .tooltip-box2 {
         left: -85px;
         bottom: 55px;
-        transition: opacity 0.9s ease;
+        transition: opacity .8s ease;
 
         &::after {
           content: "";
           display: block;
-          border-top: 7px solid #000;
+          border-top: 7px solid set.$card-bg;
           border-left: 7px solid transparent;
           border-right: 7px solid transparent;
           position: absolute;
@@ -87,12 +87,12 @@
       .tooltip-box3 {
         left: -20px;
         bottom: 55px;
-        transition: opacity 0.9s ease;
+        transition: opacity .8s ease;
 
         &::after {
           content: "";
           display: block;
-          border-top: 7px solid #000;
+          border-top: 7px solid set.$card-bg;
           border-left: 7px solid transparent;
           border-right: 7px solid transparent;
           position: absolute;
