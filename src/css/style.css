@@ -29,12 +29,12 @@ figure {
 }
 
 ::selection {
-  background-color: #80A6E4;
+  background-color: rgba(56, 139, 253, 0.4);
   color: #fffffe;
 }
 
 ::-moz-selection {
-  background-color: #80A6E4;
+  background-color: rgba(56, 139, 253, 0.4);
   color: #fffffe;
 }
 
@@ -202,6 +202,45 @@ svg {
 }
 .project .card:last-child {
   margin-right: 0;
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+.about__content {
+  width: 800px;
+  height: 100%;
+  background-color: #242629;
+  padding: 30px 15px;
+  border-radius: 3px;
+}
+.about__content h2 {
+  text-align: center;
+  font-size: 4.375rem;
+  font-weight: 500;
+  color: #fffffe;
+}
+.about__content .beginning {
+  width: 100%;
+  height: calc(100vh - 215px);
+  padding: 30px;
+}
+.about__content .beginning h3 {
+  font-size: 2rem;
+  color: #fffffe;
+  margin-block: 30px;
+}
+.about__content .beginning p {
+  font-size: 1.5625rem;
+  font-weight: 300;
+  color: #94a1b2;
+  line-height: 2;
 }
 
 .header {

@@ -1,0 +1,41 @@
+@use "../utils/" as set;
+
+.about {
+  @include set.dimensions(100%, 100%);
+  @include set.center-element;
+  padding: 50px 20px;
+  // border: 1px solid tomato;
+
+  &__content {
+    @include set.dimensions(800px, 100%);
+    background-color: set.$card-bg;
+    padding: 30px 15px;
+    border-radius: 3px;
+
+    h2 {
+      text-align: center;
+      font-size: map-get(set.$font-sizes, large);
+      font-weight: map-get(set.$font-weight, l-medium);
+      color: set.$primary;
+    }
+
+    .beginning {
+      @include set.dimensions(100%, calc(100vh - 215px));
+      padding: 30px;
+      // border: 1px solid #ccc;
+
+      h3 {
+        font-size: map-get(set.$font-sizes, medium);
+        color: set.$primary;
+        margin-block: 30px;
+      }
+
+      p {
+        font-size: map-get(set.$font-sizes, small);
+        font-weight: map-get(set.$font-weight, s-medium);
+        color: set.$paragraph;
+        line-height: 2;
+      }
+    }
+  }
+}
