@@ -29,7 +29,7 @@ const HomeScreen = () => {
           url={url2}
           altImage="Project 2"
           title="Todo List"
-          description="A Todo list app made in React is a web application that allows users to create and manage a to-do list."
+          description="A Todo list app made in React is a web application that allows users to create and manage a to-do list"
         >
           <Badge lang1="HTML" lang2="CSS" lang3="JavaScript" />
         </Card>
@@ -41,6 +41,30 @@ const HomeScreen = () => {
           description="An application for film lovers who want to find information about movies"
         >
           <Badge lang1="Vanilla JS" lang2="API REST" lang3="CSS" />
+        </Card>
+        <Card
+          url={url3}
+          altImage="Project 4"
+          title="Calculator"
+          description="Web application that allows you to perform basic mathematical operations"
+        >
+          <Badge lang1="HTML" lang2="SASS" lang3="CSS" />
+        </Card>
+        <Card
+          url={url3}
+          altImage="Project 5"
+          title="Validation Form"
+          description="It is a form that verifies that the data entered by the user is correct"
+        >
+          <Badge lang1="HTML" lang2="Vanilla JS" lang3="SASS" />
+        </Card>
+        <Card
+          url={url3}
+          altImage="Project 6"
+          title="YouTube Clone"
+          description="A replica of the most popular video platform on the Internet"
+        >
+          <Badge lang1="HTML" lang2="SASS" lang3="CSS" />
         </Card>
       </section>
     </>
