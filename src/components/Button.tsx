@@ -5,7 +5,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text, link }) => {
   return (
-		<a href={link} className="button">{text}</a>
+		<a href={link} role="link" className="button">{text}</a>
 	);
 };
 

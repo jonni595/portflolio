@@ -3,13 +3,13 @@
 .about {
   @include set.dimensions(100%, 100%);
   @include set.center-element;
-  padding: 50px 20px;
+  padding: 70px 20px;
   // border: 1px solid tomato;
 
   &__content {
     @include set.dimensions(800px, 100%);
     background-color: set.$card-bg;
-    padding: 30px 15px;
+    padding: 30px 20px;
     border-radius: 3px;
 
     h2 {
@@ -20,9 +20,32 @@
     }
 
     .beginning {
-      @include set.dimensions(100%, calc(100vh - 215px));
+      @include set.dimensions(100%, calc(100vh - 235px));
       padding: 30px;
-      // border: 1px solid #ccc;
+      border-bottom: 2px solid set.$secondary;
+
+      h3 {
+        font-size: map-get(set.$font-sizes, medium);
+        color: set.$primary;
+        margin-block: 30px;
+      }
+
+      p {
+        font-size: map-get(set.$font-sizes, small);
+        font-weight: map-get(set.$font-weight, s-medium);
+        color: set.$paragraph;
+        line-height: 2;
+      }
+    }
+
+    .profession {
+      border-top: 2px solid set.$secondary;
+    }
+
+    .education,
+    .profession {
+      @include set.dimensions(100%, 100vh);
+      padding: 30px;
 
       h3 {
         font-size: map-get(set.$font-sizes, medium);
