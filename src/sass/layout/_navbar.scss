@@ -30,4 +30,8 @@ nav {
       transform: scaleX(1);
     }
   }
+
+  a.active {
+    color: set.$tertiary;
+  }
 }

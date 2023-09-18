@@ -435,5 +435,8 @@ nav > a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
+nav a.active {
+  color: #2cb67d;
+}
 
 /*# sourceMappingURL=style.css.map */
