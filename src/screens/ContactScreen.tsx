@@ -5,6 +5,7 @@ const ContactScreen = () => {
         <form>
           <label htmlFor="name">Name</label>
           <input
+          required
             placeholder="Jane Doe"
             type="text"
             name="firstName"
@@ -13,6 +14,7 @@ const ContactScreen = () => {
           />
           <label htmlFor="email">Email</label>
           <input
+          required
             placeholder="email@website.com"
             type="email"
             name="email"
@@ -20,7 +22,8 @@ const ContactScreen = () => {
             autoComplete="off"
           />
           <label htmlFor="message">Message</label>
-          <textarea placeholder="What do you like to say?" name="message" id="message" cols={30} rows={10}></textarea>
+          <textarea
+          required placeholder="What do you like to say?" name="message" id="message" cols={30} rows={10}></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
