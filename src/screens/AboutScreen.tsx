@@ -1,10 +1,35 @@
+import { useEffect, useRef } from "react";
+
 const AboutScreen = () => {
+  const sectionRef = useRef<(HTMLElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    sectionRef.current.forEach((elem) => elem && observer.observe(elem));
+
+    return () => {
+      sectionRef.current.forEach((elem) => elem && observer.unobserve(elem));
+    };
+  }, []);
+
   return (
     <>
       <section className="about">
         <article className="about__content">
           <h2>Who I am?</h2>
-          <section className="beginning">
+          <section
+            ref={(ele) => (sectionRef.current[0] = ele)}
+            className="beginning hidden"
+          >
             <h3>Let's start!! 🏃🏾‍♂️</h3>
             <p>
               Hi!👋 I'm Jonathan Dajome, a 28-year-old Colombian ☕ web
@@ -20,7 +45,7 @@ const AboutScreen = () => {
               developer, please don't hesitate to contact me.
             </p>
           </section>
-          <section className="education">
+          <section ref={(ele) => (sectionRef.current[1] = ele)} className="education hidden">
             <h3>Education 🎓</h3>
             <p>
               I studied at the Pedro Morales Pino school, completing primary and
@@ -43,7 +68,7 @@ const AboutScreen = () => {
               brought me here.
             </p>
           </section>
-          <section className="profession">
+          <section ref={(ele) => (sectionRef.current[2] = ele)} className="profession hidden">
             <h3>Profession 💻</h3>
             <p>
               When I completed my studies, I was unable to find a position in
@@ -51,9 +76,9 @@ const AboutScreen = () => {
               with my responsibilities. I entered the world of work in a
               customer service company, where I stayed for almost 5 years from
               2017 to 2022. I resigned because I wanted to resume my career in
-              tech, and I obtained a position as a junior web developer. <br /><br /> My
-              expectations were very high when I obtained my first job in the
-              tech world. However, my profile was different from what the
+              tech, and I obtained a position as a junior web developer. <br />
+              <br /> My expectations were very high when I obtained my first job
+              in the tech world. However, my profile was different from what the
               company was looking for. I resigned with the aim of getting a job
               that matched my skills, and it wasn't until a year later that I
               found a job as a freelancer. I was part of a mobile project where

@@ -228,7 +228,7 @@ svg {
 }
 .about__content .beginning {
   width: 100%;
-  height: calc(100vh - 235px);
+  height: calc(100vh - 220px);
   padding: 30px;
   border-bottom: 2px solid #72757e;
 }
@@ -264,6 +264,17 @@ svg {
   font-weight: 300;
   color: #94a1b2;
   line-height: 2;
+}
+.about .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+.about .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .header {
