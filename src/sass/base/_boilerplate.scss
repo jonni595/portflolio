@@ -11,6 +11,20 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: set.$secondary;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: set.$stroke;
+  }
 }
 
 body {
