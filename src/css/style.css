@@ -49,6 +49,16 @@ figure {
   color: #fffffe;
 }
 
+.icon {
+  color: #010101;
+  font-size: 2rem;
+}
+
+.scroll-Top {
+  border-radius: 50%;
+  background-color: #fffffe;
+}
+
 a {
   display: block;
   text-decoration: none;

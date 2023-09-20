@@ -53,3 +53,13 @@ figure {
   background-color: set.$selection;
   color: set.$primary;
 }
+
+.icon {
+  color: set.$stroke;
+  font-size: map-get(set.$font-sizes, medium);
+}
+
+.scroll-Top {
+  border-radius: 50%;
+  background-color: set.$primary;
+}
