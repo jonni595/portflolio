@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Toaster, toast } from "sonner";
 import { initialState } from "../model";
 
 const ContactScreen = () => {
@@ -29,6 +30,7 @@ const ContactScreen = () => {
           (result) => {
             console.log(result.text);
             console.log("Message sent");
+            toast.success("Message sent successfully");
           },
           (error) => {
             console.log(error.text);
@@ -37,9 +39,7 @@ const ContactScreen = () => {
     } else {
       console.log("Form is not available");
     }
-    console.log(person)
     setPerson(initialState);
-
   };
 
   return (
@@ -79,8 +79,11 @@ const ContactScreen = () => {
             cols={30}
             rows={10}
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={!person}>
+            Submit
+          </button>
         </form>
+        <Toaster />
       </div>
     </div>
   );
