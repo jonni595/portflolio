@@ -1,7 +1,9 @@
-import { useState } from "react";
-import { initialState, USER_EMAIL } from "../model";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { initialState } from "../model";
 
 const ContactScreen = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [person, setPerson] = useState(initialState);
 
   const handleChangeInput = (
@@ -15,23 +17,35 @@ const ContactScreen = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    /* if (
-      person.firstName === "" ||
-      person.email === "" ||
-      person.message === ""
-    ) {
-      alert("Please complete all fields");
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_fl2efcs",
+          "template_rbata4c",
+          form.current,
+          "FYuqYKcBLR0x918JE"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("Message sent");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     } else {
-      window.location.href = `mailto:${USER_EMAIL}`;
-      setPerson(initialState);
-    } */
+      console.log("Form is not available");
+    }
+    console.log(person)
     setPerson(initialState);
+
   };
 
   return (
     <div className="contact">
       <div className="contact__container">
-        <form action={`mailto:${USER_EMAIL}`} method="post" encType="text/plain" >
+        <form ref={form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
             onChange={handleChangeInput}
@@ -65,9 +79,7 @@ const ContactScreen = () => {
             cols={30}
             rows={10}
           ></textarea>
-          <button type="submit" onClick={handleSubmit}>
-            Submit
-          </button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>

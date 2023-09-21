@@ -10,4 +10,4 @@ export const initialState: Props = {
 	message: ""
 }
 
-export const USER_EMAIL = "jonathandajome@gmail.com"
+// export const USER_EMAIL = "jonathandajome@gmail.com"

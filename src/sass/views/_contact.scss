@@ -1,7 +1,7 @@
 @use "../utils/" as set;
 
 .contact {
-  @include set.dimensions(100%, calc(100vh - 70px));
+  @include set.dimensions(100%, 100%);
   @include set.center-element;
   padding: 50px 20px;
 
