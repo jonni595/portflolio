@@ -18,7 +18,13 @@ const ContactScreen = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (form.current) {
+    if (
+      person.firstName === "" ||
+      person.email === "" ||
+      person.message === ""
+    ) {
+      return toast.error("Please complete the fields");
+    } else if (form.current) {
       emailjs
         .sendForm(
           "service_fl2efcs",
@@ -39,6 +45,7 @@ const ContactScreen = () => {
     } else {
       console.log("Form is not available");
     }
+
     setPerson(initialState);
   };
 
@@ -50,7 +57,6 @@ const ContactScreen = () => {
           <input
             onChange={handleChangeInput}
             value={person.firstName}
-            required
             placeholder="Jane Doe"
             type="text"
             name="firstName"
@@ -61,7 +67,6 @@ const ContactScreen = () => {
           <input
             onChange={handleChangeInput}
             value={person.email}
-            required
             placeholder="email@website.com"
             type="email"
             name="email"
@@ -72,7 +77,6 @@ const ContactScreen = () => {
           <textarea
             onChange={handleChangeInput}
             value={person.message}
-            required
             placeholder="What do you like to say?"
             name="message"
             id="message"
@@ -83,7 +87,7 @@ const ContactScreen = () => {
             Submit
           </button>
         </form>
-        <Toaster />
+        <Toaster richColors />
       </div>
     </div>
   );
