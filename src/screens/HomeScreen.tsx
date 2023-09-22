@@ -22,6 +22,7 @@ const HomeScreen = () => {
             description={project.paragraph}
             url={project.imageUrl}
             altImage={project.altImg}
+            gitHubUrl={project.projectUrl}
           >
             <Badge langs={project.languages} />
           </Card>
