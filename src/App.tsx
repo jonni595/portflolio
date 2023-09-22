@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <ScrollToTop smooth top={450} component={<IoArrowUp className="icon" />} className="scroll-Top" />
+      <ScrollToTop smooth top={450} component={<IoArrowUp className="icon" />} style={{borderRadius: "50%"}} />
       <main>
         <Routes>
           <Route index path="/" element={<HomeScreen />} />
