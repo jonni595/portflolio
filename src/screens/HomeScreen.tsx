@@ -1,5 +1,5 @@
 import { Avatar, Badge, Button, Card } from "../components";
-import { projects } from "../model";
+import { projects } from "../utils/model";
 
 const HomeScreen = () => {
   return (
@@ -23,7 +23,7 @@ const HomeScreen = () => {
             url={project.imageUrl}
             altImage={project.altImg}
           >
-            <Badge lang1="HTML" lang2="CSS" lang3="Vanilla JS" />
+            <Badge langs={project.languages} />
           </Card>
         ))}
       </section>

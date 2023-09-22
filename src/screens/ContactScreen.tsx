@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "sonner";
-import { initialState } from "../model";
+import { initialState } from "../utils/model";
 
 const ContactScreen = () => {
   const form = useRef<HTMLFormElement>(null);

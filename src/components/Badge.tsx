@@ -1,15 +1,15 @@
 interface ButtonProps {
-  lang1: string;
-  lang2: string;
-  lang3: string;
+  langs: string[];
 }
 
-const Badge: React.FC<ButtonProps> = ({ lang1, lang2, lang3 }) => {
+const Badge: React.FC<ButtonProps> = ({ langs }) => {
   return (
     <>
-      <span className="badge">{lang1}</span>
-      <span className="badge">{lang2}</span>
-      <span className="badge">{lang3}</span>
+      {langs.map((lang, i) => (
+        <span key={i} className="badge">
+          {lang}
+        </span>
+      ))}
     </>
   );
 };
