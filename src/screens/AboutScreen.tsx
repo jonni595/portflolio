@@ -39,13 +39,16 @@ const AboutScreen = () => {
               games, playing sports, reading, studying, thinking, watching TV
               shows, and developing web applications. I'm a creative and
               innovative person, and I like to work on challenging projects that
-              allow me to learn and grow. You can see some of my most recent
-              projects and my web development skills and experience in my
-              portfolio. If you're looking for a creative and talented web
+              allow me to learn and grow. <br /> <br /> You can see some of my
+              most recent projects and my web development skills and experience
+              in my portfolio. If you're looking for a creative and talented web
               developer, please don't hesitate to contact me.
             </p>
           </section>
-          <section ref={(ele) => (sectionRef.current[1] = ele)} className="education hidden">
+          <section
+            ref={(ele) => (sectionRef.current[1] = ele)}
+            className="education hidden"
+          >
             <h3>Education 🎓</h3>
             <p>
               I studied at the Pedro Morales Pino school, completing primary and
@@ -68,7 +71,10 @@ const AboutScreen = () => {
               brought me here.
             </p>
           </section>
-          <section ref={(ele) => (sectionRef.current[2] = ele)} className="profession hidden">
+          <section
+            ref={(ele) => (sectionRef.current[2] = ele)}
+            className="profession hidden"
+          >
             <h3>Profession 💻</h3>
             <p>
               When I completed my studies, I was unable to find a position in
@@ -81,10 +87,11 @@ const AboutScreen = () => {
               in the tech world. However, my profile was different from what the
               company was looking for. I resigned with the aim of getting a job
               that matched my skills, and it wasn't until a year later that I
-              found a job as a freelancer. I was part of a mobile project where
-              we used modern technologies such as React Native and TypeScript. I
-              managed to develop different modules for user authentication,
-              designs, and navigation between screens.
+              found a job as a freelancer. <br />
+              <br /> I was part of a mobile project where we used modern
+              technologies such as React Native and TypeScript. I managed to
+              develop different modules for user authentication, designs, and
+              navigation between screens.
             </p>
           </section>
         </article>
