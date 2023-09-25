@@ -37,8 +37,9 @@ const Footer = () => {
         </div>
         <div className="footer__creator">
           <p>
-            Made with 💜 by <span className="creator">Jonathan Dajome R. </span>{" "}
+            Made with 💜 by Jonathan Dajome R.
           </p>
+          <span> © 2023 All Rights Reserved. </span>
         </div>
       </div>
     </footer>
