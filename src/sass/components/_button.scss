@@ -7,11 +7,13 @@
   margin-top: 30px;
   font-size: map-get(set.$font-sizes, small);
   background-color: transparent;
+  color: set.$bg-button;
   font-weight: map-get(set.$font-sizes, medium);
   transition: all ease-in 0.2s;
 
   &:hover {
     background-color: set.$bg-button;
+    color: set.$primary;
   }
 }
 

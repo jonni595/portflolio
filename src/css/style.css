@@ -128,11 +128,13 @@ svg {
   margin-top: 30px;
   font-size: 1.5625rem;
   background-color: transparent;
+  color: #7f5af0;
   font-weight: 2rem;
   transition: all ease-in 0.2s;
 }
 .button:hover {
   background-color: #7f5af0;
+  color: #fffffe;
 }
 
 .card {
