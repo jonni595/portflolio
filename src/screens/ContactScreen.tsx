@@ -18,33 +18,43 @@ const ContactScreen = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (
-      person.firstName === "" ||
-      person.email === "" ||
-      person.message === ""
-    ) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    const { firstName, email, message } = person;
+
+    if (!firstName || !email || !message) {
       return toast.error("Please complete the fields");
-    } else if (form.current) {
-      emailjs
-        .sendForm(
-          "service_fl2efcs",
-          "template_rbata4c",
-          form.current,
-          "FYuqYKcBLR0x918JE"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            console.log("Message sent");
-            toast.success("Message sent successfully");
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    } else {
-      console.log("Form is not available");
     }
+
+    if (firstName.length < 7 || message.length < 10) {
+      return toast.error("you must enter 8 characters minimum");
+    }
+
+    if (!regex.test(email)) {
+      return toast.error("Wrong email");
+    }
+
+    if (!form.current) {
+      console.log("Form is not available");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_fl2efcs",
+        "template_rbata4c",
+        form.current,
+        "FYuqYKcBLR0x918JE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setPerson(initialState);
   };
@@ -87,7 +97,7 @@ const ContactScreen = () => {
             Submit
           </button>
         </form>
-        <Toaster richColors />
+        <Toaster richColors expand />
       </div>
     </div>
   );
