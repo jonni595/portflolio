@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <div className="footer__creator">
           <p>
-            Made with 💜 by <span className="creator">@jonathandajome</span>{" "}
+            Made with 💜 by <span className="creator">Jonathan Dajome R. </span>{" "}
           </p>
         </div>
       </div>
