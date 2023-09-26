@@ -15,5 +15,9 @@
     background-color: set.$bg-button;
     color: set.$primary;
   }
+
+  @media (width <= 510px ) {
+    font-size: map-get(set.$font-sizes, x-small);
+  }
 }
 

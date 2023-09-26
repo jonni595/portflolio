@@ -12,13 +12,21 @@
       font-size: map-get(set.$font-sizes, x-large);
       font-weight: map-get(set.$font-weight, large);
 
+      @media (width <= 768px) {
+        font-size: map-get(set.$font-sizes, large);
+      }
+
+      @media (width <= 510px) {
+        font-size: 2.7rem;
+      }
+
       &::before {
-        content: "<";
+        content: "{ ";
         color: rgb(85, 0, 85);
       }
 
       &::after {
-        content: " />";
+        content: " }";
         color: rgb(85, 0, 85);
       }
     }
@@ -27,6 +35,14 @@
       font-size: map-get(set.$font-sizes, medium);
       color: set.$secondary;
       font-weight: map-get(set.$font-weight, small);
+
+      @media (width <= 768px) {
+        font-size: map-get(set.$font-sizes, small);
+      }
+
+      @media (width <= 510px) {
+        font-size: 1.1rem;
+      }
     }
   }
 }
@@ -40,5 +56,15 @@
 
   .card:nth-child(3), .card:nth-child(6) {
     margin-right: 0;
+
+    @media (width <= 1110px) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (width <= 480px) {
+    .card, .card:nth-child(3), .card:nth-child(6) {
+      margin-right: 0;
+    }
   }
 }

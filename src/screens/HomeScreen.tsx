@@ -1,4 +1,5 @@
 import { Avatar, Badge, Button, Card } from "../components";
+import { getLimit } from "../utils/getLimit";
 import { projects } from "../utils/model";
 
 const HomeScreen = () => {
@@ -19,7 +20,7 @@ const HomeScreen = () => {
           <Card
             key={project.id}
             title={project.title}
-            description={project.paragraph}
+            description={`${getLimit(project.paragraph)}`}
             url={project.imageUrl}
             altImage={project.altImg}
             gitHubUrl={project.projectUrl}

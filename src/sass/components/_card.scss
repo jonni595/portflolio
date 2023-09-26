@@ -10,6 +10,22 @@
   background-color: set.$bg-color;
   transition: all 0.5s ease-in-out;
 
+
+  @media (width <= 1280px) {
+    @include set.dimensions(350px, 430px);
+    padding: 20px 20px;
+  }
+
+  @media (width <= 1130px) {
+    @include set.dimensions(310px, 390px);
+    padding: 15px 15px;
+  }
+
+  @media (width <= 480px) {
+    @include set.dimensions(350px, 400px);
+    padding: 20px 20px;
+  }
+
   span:last-child {
     margin-right: 0;
   }
@@ -21,9 +37,21 @@
 
   &__image {
     @include set.dimensions(398px, 300px);
-    transition: transform .8s;
+    transition: transform 0.8s;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+
+    @media (width <= 1280px) {
+      @include set.dimensions(340px, 250px);
+    }
+
+    @media (width <= 1130px) {
+      @include set.dimensions(300px, 220px);
+    }
+
+    @media (width <= 480px) {
+      @include set.dimensions(310px, 230px);
+    }
   }
 
   &__card-title {

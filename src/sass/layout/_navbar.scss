@@ -4,6 +4,10 @@ nav {
   @include set.center-element(row, center, space-evenly);
   @include set.dimensions(400px, 50px);
 
+  @media (width <= 480px) {
+   display: none;
+  }
+
   & > a {
     font-size: map-get(set.$font-sizes, medium);
     color: set.$primary;
