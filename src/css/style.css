@@ -576,6 +576,11 @@ svg {
   font-size: 4.375rem;
   color: #fffffe;
 }
+@media (width < 480px) {
+  .footer__container-icons a .icon-styles {
+    font-size: 3.5rem;
+  }
+}
 .footer__creator {
   width: 300px;
   height: 50px;
@@ -585,6 +590,12 @@ svg {
 .footer__creator span {
   font-size: 1.5625rem;
   color: #94a1b2;
+}
+@media (width < 480px) {
+  .footer__creator p,
+  .footer__creator span {
+    font-size: 1.25rem;
+  }
 }
 
 nav {

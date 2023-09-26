@@ -106,6 +106,10 @@
     a .icon-styles {
       font-size: map-get(set.$font-sizes, large);
       color: set.$primary;
+
+      @media (width < 480px) {
+        font-size: 3.5rem;
+      }
     }
   }
 
@@ -117,6 +121,10 @@
     span {
       font-size: map-get(set.$font-sizes, small);
       color: set.$paragraph;
+
+      @media (width < 480px) {
+        font-size: map-get(set.$font-sizes, x-small);
+      }
     }
   }
 }
