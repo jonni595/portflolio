@@ -6,11 +6,9 @@ const AboutScreen = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
-        }
+        return entry.isIntersecting
+          ? entry.target.classList.add("show")
+          : entry.target.classList.remove("show");
       });
     });
 
