@@ -62,7 +62,7 @@ const ContactScreen = () => {
   return (
     <div className="contact">
       <div className="contact__container">
-        <form ref={form} onSubmit={handleSubmit}>
+        <form role="form" ref={form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
             onChange={handleChangeInput}
@@ -74,7 +74,7 @@ const ContactScreen = () => {
             autoComplete="off"
           />
           <label htmlFor="email">Email</label>
-          <input
+          <input role=""
             onChange={handleChangeInput}
             value={person.email}
             placeholder="email@website.com"
@@ -84,7 +84,7 @@ const ContactScreen = () => {
             autoComplete="off"
           />
           <label htmlFor="message">Message</label>
-          <textarea
+          <textarea role=""
             onChange={handleChangeInput}
             value={person.message}
             placeholder="What do you like to say?"

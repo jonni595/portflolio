@@ -6,39 +6,19 @@
   background-color: set.$bg-color;
   color: set.$primary;
   box-shadow: 0 0px 5px 1px rgba(66, 66, 66, 0.9);
+  position: relative;
 
   .menu-icon,
   .close-icon {
+    @include set.dimensions(40px, 40px);
     display: none;
     font-size: 50px;
+    position: absolute;
+    right: 10px;
+    z-index: 2000;
 
     @media (width <= 480px) {
       display: block;
     }
   }
-
-  /* .menu {
-    width: 100%;
-    height: calc(100vh * 2);
-    background: slateblue;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    z-index: 1000;
-    animation: slide-in 1000ms;
-  } */
 }
-
-/* @keyframes slide-in {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
- */

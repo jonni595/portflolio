@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
-    <nav>
+    <nav role="navigation">
       <NavLink to="/">Home</NavLink>
       <NavLink to="about">About</NavLink>
       <NavLink to="contact">Contact</NavLink>
