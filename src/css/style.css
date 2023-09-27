@@ -306,6 +306,16 @@ svg {
   justify-content: center;
   padding: 70px 20px;
 }
+@media (width <= 1500px) {
+  .about {
+    padding: 40px 20px;
+  }
+}
+@media (width <= 880px) {
+  .about {
+    padding: 30px 20px;
+  }
+}
 .about__content {
   width: 800px;
   height: 100%;
@@ -313,11 +323,27 @@ svg {
   padding: 30px 20px;
   border-radius: 3px;
 }
+@media (width <= 880px) {
+  .about__content {
+    width: 550px;
+    height: 100%;
+  }
+}
 .about__content h2 {
   text-align: center;
   font-size: 4.375rem;
   font-weight: 500;
   color: #fffffe;
+}
+@media (width <= 1500px) {
+  .about__content h2 {
+    font-size: 4rem;
+  }
+}
+@media (width <= 880px) {
+  .about__content h2 {
+    font-size: 3.8rem;
+  }
 }
 .about__content .beginning {
   width: 100%;
@@ -325,16 +351,56 @@ svg {
   padding: 30px;
   border-bottom: 2px solid #72757e;
 }
+@media (width <= 1500px) {
+  .about__content .beginning {
+    width: 100%;
+    height: calc(100vh - 190px);
+  }
+}
+@media (width <= 880px) {
+  .about__content .beginning {
+    width: 100%;
+    height: calc(100vh - 180px);
+    padding: 10px;
+  }
+}
 .about__content .beginning h3 {
   font-size: 2rem;
   color: #fffffe;
   margin-block: 30px;
+}
+@media (width <= 1500px) {
+  .about__content .beginning h3 {
+    margin-block: 20px;
+  }
+}
+@media (width <= 880px) {
+  .about__content .beginning h3 {
+    margin-block: 15px;
+  }
 }
 .about__content .beginning p {
   font-size: 1.5625rem;
   font-weight: 300;
   color: #94a1b2;
   line-height: 2;
+}
+@media (width <= 1500px) {
+  .about__content .beginning p {
+    line-height: 1.8;
+  }
+}
+@media (width <= 880px) {
+  .about__content .beginning p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media (width <= 480px) {
+  .about__content .beginning p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
 }
 .about__content .profession {
   border-top: 2px solid #72757e;
@@ -345,11 +411,29 @@ svg {
   height: 100vh;
   padding: 30px;
 }
+@media (width <= 880px) {
+  .about__content .education,
+  .about__content .profession {
+    padding: 10px;
+  }
+}
 .about__content .education h3,
 .about__content .profession h3 {
   font-size: 2rem;
   color: #fffffe;
   margin-block: 30px;
+}
+@media (width <= 1500px) {
+  .about__content .education h3,
+  .about__content .profession h3 {
+    margin-block: 20px;
+  }
+}
+@media (width <= 880px) {
+  .about__content .education h3,
+  .about__content .profession h3 {
+    margin-block: 15px;
+  }
 }
 .about__content .education p,
 .about__content .profession p {
@@ -357,6 +441,26 @@ svg {
   font-weight: 300;
   color: #94a1b2;
   line-height: 2;
+}
+@media (width <= 1500px) {
+  .about__content .education p,
+  .about__content .profession p {
+    line-height: 1.8;
+  }
+}
+@media (width <= 880px) {
+  .about__content .education p,
+  .about__content .profession p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media (width <= 480px) {
+  .about__content .education p,
+  .about__content .profession p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
 }
 .about .hidden {
   opacity: 0;

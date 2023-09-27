@@ -27,7 +27,7 @@ const ContactScreen = () => {
     }
 
     if (firstName.length < 7 || message.length < 10) {
-      return toast.error("you must enter 8 characters minimum");
+      return toast.error("You must enter 8 characters minimum");
     }
 
     if (!regex.test(email)) {

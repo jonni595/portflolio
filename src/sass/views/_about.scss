@@ -5,17 +5,37 @@
   @include set.center-element;
   padding: 70px 20px;
 
+  @media (width <= 1500px) {
+    padding: 40px 20px;
+  }
+
+  @media (width <= 880px) {
+    padding: 30px 20px;
+  }
+
   &__content {
     @include set.dimensions(800px, 100%);
     background-color: set.$card-bg;
     padding: 30px 20px;
     border-radius: 3px;
 
+    @media (width <= 880px) {
+      @include set.dimensions(550px, 100%);
+    }
+
     h2 {
       text-align: center;
       font-size: map-get(set.$font-sizes, large);
       font-weight: map-get(set.$font-weight, l-medium);
       color: set.$primary;
+
+      @media (width <= 1500px) {
+        font-size: 4rem;
+      }
+
+      @media (width <= 880px) {
+        font-size: 3.8rem;
+      }
     }
 
     .beginning {
@@ -23,10 +43,27 @@
       padding: 30px;
       border-bottom: 2px solid set.$secondary;
 
+      @media (width <= 1500px) {
+        @include set.dimensions(100%, calc(100vh - 190px));
+      }
+
+      @media (width <= 880px) {
+        @include set.dimensions(100%, calc(100vh - 180px));
+        padding: 10px;
+      }
+
       h3 {
         font-size: map-get(set.$font-sizes, medium);
         color: set.$primary;
         margin-block: 30px;
+
+        @media (width <= 1500px) {
+          margin-block: 20px;
+        }
+
+        @media (width <= 880px) {
+          margin-block: 15px;
+        }
       }
 
       p {
@@ -34,6 +71,20 @@
         font-weight: map-get(set.$font-weight, s-medium);
         color: set.$paragraph;
         line-height: 2;
+
+        @media (width <= 1500px) {
+          line-height: 1.8;
+        }
+
+        @media (width <= 880px) {
+          font-size: 1.5rem;
+          line-height: 1.5;
+        }
+
+        @media (width <= 480px) {
+          font-size: 1.4rem;
+          line-height: 1.7;
+        }
       }
     }
 
@@ -46,10 +97,22 @@
       @include set.dimensions(100%, 100vh);
       padding: 30px;
 
+      @media (width <= 880px) {
+        padding: 10px;
+      }
+
       h3 {
         font-size: map-get(set.$font-sizes, medium);
         color: set.$primary;
         margin-block: 30px;
+
+        @media (width <= 1500px) {
+          margin-block: 20px;
+        }
+
+        @media (width <= 880px) {
+          margin-block: 15px;
+        }
       }
 
       p {
@@ -57,11 +120,25 @@
         font-weight: map-get(set.$font-weight, s-medium);
         color: set.$paragraph;
         line-height: 2;
+
+        @media (width <= 1500px) {
+          line-height: 1.8;
+        }
+
+        @media (width <= 880px) {
+          font-size: 1.5rem;
+          line-height: 1.5;
+        }
+
+        @media (width <= 480px) {
+          font-size: 1.4rem;
+          line-height: 1.7;
+        }
       }
     }
   }
 
-  .hidden {
+   .hidden {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
