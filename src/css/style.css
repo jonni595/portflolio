@@ -143,15 +143,15 @@ svg {
 }
 
 .card {
-  width: 400px;
+  width: 425px;
   height: 480px;
-  overflow: hidden;
-  padding: 25px 25px;
-  margin-right: 20px;
+  padding: 15px 15px;
+  margin-right: 15px;
   margin-block: 20px;
   border-radius: 8px;
   background-color: #16161a;
   transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 @media (width <= 1280px) {
   .card {
@@ -178,7 +178,7 @@ svg {
   margin-right: 0;
 }
 .card:hover .card__image {
-  transform: scale(1.07);
+  transform: scale(1.05);
   cursor: pointer;
 }
 .card__image {
@@ -283,16 +283,20 @@ svg {
   background-color: #242629;
   padding: 30px 20px;
 }
-.project .card:nth-child(3), .project .card:nth-child(6) {
+.project .card:nth-child(3),
+.project .card:nth-child(6) {
   margin-right: 0;
 }
 @media (width <= 1110px) {
-  .project .card:nth-child(3), .project .card:nth-child(6) {
+  .project .card:nth-child(3),
+  .project .card:nth-child(6) {
     margin-right: 20px;
   }
 }
 @media (width <= 480px) {
-  .project .card, .project .card:nth-child(3), .project .card:nth-child(6) {
+  .project .card,
+  .project .card:nth-child(3),
+  .project .card:nth-child(6) {
     margin-right: 0;
   }
 }

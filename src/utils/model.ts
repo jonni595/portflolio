@@ -1,3 +1,11 @@
+import Quiz from '../assets/Img_Quiz.png';
+import Todo from '../assets/Img_Todo.png';
+import Movie from '../assets/Img_Movie.png';
+import Calc from '../assets/Img_Calc.png';
+import Form from '../assets/Img_Form.png';
+import YouTube from '../assets/Img_YT.png';
+
+
 interface Props {
   firstName: string;
   email: string;
@@ -24,7 +32,7 @@ export const projects: Card[] = [
   {
     id: 0,
     title: "Quiz App",
-    imageUrl: "https://picsum.photos/100",
+    imageUrl: `${Quiz}`,
     altImg: "Project 1",
     paragraph:
       "Challenge your knowledge and show how much you know about web development",
@@ -34,7 +42,7 @@ export const projects: Card[] = [
   {
     id: 1,
     title: "Todo List",
-    imageUrl: "https://picsum.photos/200",
+    imageUrl: `${Todo}`,
     altImg: "Project 2",
     paragraph:
       "A Todo list app made in React is a web application that allows users to create and manage a to-do list",
@@ -44,7 +52,7 @@ export const projects: Card[] = [
   {
     id: 2,
     title: "Movie App",
-    imageUrl: "https://picsum.photos/300",
+    imageUrl: `${Movie}`,
     altImg: "Project 3",
     paragraph:
       "An application for film lovers who want to find information about movies",
@@ -54,7 +62,7 @@ export const projects: Card[] = [
   {
     id: 3,
     title: "Calculator",
-    imageUrl: "https://picsum.photos/400",
+    imageUrl: `${Calc}`,
     altImg: "Project 4",
     paragraph:
       "Web application that allows you to perform basic mathematical operations",
@@ -63,8 +71,8 @@ export const projects: Card[] = [
   },
   {
     id: 4,
-    title: "Validation Form",
-    imageUrl: "https://picsum.photos/500",
+    title: "Form Validation",
+    imageUrl: `${Form}`,
     altImg: "Project 5",
     paragraph:
       "It is a form that verifies that the data entered by the user is correct",
@@ -74,7 +82,7 @@ export const projects: Card[] = [
   {
     id: 5,
     title: "YouTube Clone",
-    imageUrl: "https://picsum.photos/600",
+    imageUrl: `${YouTube}`,
     altImg: "Project 6",
     paragraph: "A replica of the most popular video platform on the Internet",
     languages: ["HTML", "SASS", "CSS"],

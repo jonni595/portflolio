@@ -54,7 +54,8 @@
   background-color: set.$card-bg;
   padding: 30px 20px;
 
-  .card:nth-child(3), .card:nth-child(6) {
+  .card:nth-child(3),
+  .card:nth-child(6) {
     margin-right: 0;
 
     @media (width <= 1110px) {
@@ -63,7 +64,9 @@
   }
 
   @media (width <= 480px) {
-    .card, .card:nth-child(3), .card:nth-child(6) {
+    .card,
+    .card:nth-child(3),
+    .card:nth-child(6) {
       margin-right: 0;
     }
   }
