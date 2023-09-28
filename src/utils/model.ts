@@ -1,9 +1,9 @@
-import Quiz from '../assets/Img_Quiz.png';
-import Todo from '../assets/Img_Todo.png';
-import Movie from '../assets/Img_Movie.png';
-import Calc from '../assets/Img_Calc.png';
-import Form from '../assets/Img_Form.png';
-import YouTube from '../assets/Img_YT.png';
+import Quiz from '../assets/Img_Quiz-min.png';
+import Todo from '../assets/Img_Todo-min.png';
+import Movie from '../assets/Img_Movie-min.png';
+import Calc from '../assets/Img_Calc-min.png';
+import Form from '../assets/Img_Form-min.png';
+import YouTube from '../assets/Img_YT-min.png';
 
 
 interface Props {
