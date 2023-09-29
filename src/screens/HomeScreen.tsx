@@ -16,16 +16,16 @@ const HomeScreen = () => {
         </div>
       </section>
       <section id="project" className="project">
-        {projects.map((project) => (
+        {projects.map(({id, title, paragraph, imageUrl, altImg, projectUrl, languages}) => (
           <Card
-            key={project.id}
-            title={project.title}
-            description={`${getLimit(project.paragraph)}`}
-            url={project.imageUrl}
-            altImage={project.altImg}
-            gitHubUrl={project.projectUrl}
+            key={id}
+            title={title}
+            description={`${getLimit(paragraph)}`}
+            url={imageUrl}
+            altImage={altImg}
+            gitHubUrl={projectUrl}
           >
-            <Badge langs={project.languages} />
+            <Badge langs={languages} />
           </Card>
         ))}
       </section>
