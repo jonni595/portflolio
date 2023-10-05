@@ -5,7 +5,7 @@ import { projects, technologies } from "../utils/model";
 
 const HomeScreen = () => {
   const [text] = useTypewriter({
-    words: ["Frontend Developer", "I 💛 JavaScript"],
+    words: ["Frontend Developer", "I 💛 JavaScript", "Freelancer"],
     loop: 0,
     typeSpeed: 80,
     deleteSpeed: 50,
