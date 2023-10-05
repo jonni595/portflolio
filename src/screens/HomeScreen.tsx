@@ -48,6 +48,7 @@ const HomeScreen = () => {
           )
         )}
       </section>
+      <section className="skills"></section>
     </>
   );
 };

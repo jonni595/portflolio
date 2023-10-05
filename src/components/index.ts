@@ -5,3 +5,5 @@ export * from "./Avatar";
 export * from "./Button";
 export * from "./Card";
 export * from "./Footer";
+export * from "./SkillsCard"
+export * from "./SkillButton"

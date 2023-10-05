@@ -218,6 +218,25 @@ svg {
   margin-block: 10px;
 }
 
+.skill_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-basis: 120px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  user-select: none;
+  font-family: inherit;
+}
+
 .profile {
   display: flex;
   flex-direction: row;
@@ -299,6 +318,18 @@ svg {
   .project .card:nth-child(6) {
     margin-right: 0;
   }
+}
+
+.skills {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #16161a;
+  padding: 40px 30px;
+  gap: 20px;
 }
 
 .about {

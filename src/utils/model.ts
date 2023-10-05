@@ -1,3 +1,7 @@
+import { IconType } from "react-icons";
+import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoSass } from "react-icons/io5";
+import { BiLogoGit, BiLogoTypescript } from 'react-icons/bi';
+
 import Quiz from "../assets/Img_Quiz-min.png";
 import Todo from "../assets/Img_Todo-min.png";
 import Movie from "../assets/Img_Movie-min.png";
@@ -86,5 +90,65 @@ export const projects: Card[] = [
     paragraph: "A replica of the most popular video platform on the Internet",
     languages: ["HTML", "SASS", "CSS"],
     projectUrl: "https://jonni595.github.io/youtube-clone/",
+  },
+];
+
+type PropsIcons = {
+  id: number;
+  name: string;
+  icon: IconType;
+  description: string;
+  alt: string;
+};
+
+export const icons: PropsIcons[] = [
+  {
+    id: 1,
+    name: "HTML",
+    icon: IoLogoHtml5,
+    description: "+3 Experience",
+    alt: "HTML image",
+  },
+  {
+    id: 2,
+    name: "CSS",
+    icon: IoLogoCss3,
+    description: "+3 Experience",
+    alt: "CSS image",
+  },
+  {
+    id: 3,
+    name: "JavaScript",
+    icon: IoLogoJavascript,
+    description: "+2 Experience",
+    alt: "JavaScript image",
+  },
+  {
+    id: 4,
+    name: "Rect",
+    icon: IoLogoReact,
+    description: "+1 Experience",
+    alt: "React image",
+  },
+  {
+    id: 5,
+    name: "TypeScript",
+    icon: BiLogoTypescript,
+    description: "+1 Experience",
+    alt: "TypeScript image",
+  },
+  {
+    id: 6,
+    name: "Git",
+    icon: BiLogoGit,
+    description: "+1 Experience",
+    alt: "Git image",
+  },
+  {
+    id: 7,
+    name: "Sass",
+    icon: IoLogoSass,
+    description: "+3 Experience",
+    alt: "Sass image",
   },
 ];
