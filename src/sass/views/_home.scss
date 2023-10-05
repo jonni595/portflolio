@@ -73,12 +73,11 @@
 }
 
 .skills {
-  @include set.dimensions(100%, 400px);
-  @include set.center-element(row, stretch, center);
+  @include set.dimensions(100%, 450px);
+  @include set.center-element(row, center, center);
+  flex-wrap: wrap;
   background-color: set.$bg-color;
   padding: 40px 30px;
-  gap: 20px;
-
-  // border: 1px solid tomato;
+  gap: 40px;
 
 }

@@ -1,9 +1,20 @@
-.skill_card {
-	display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  flex-basis: 120px;
-	border: 1px solid #ccc;
+@use '../utils' as set;
+
+.skill__card {
+  @include set.dimensions(150px, 200px);
+  @include set.center-element(column, center, space-evenly);
   border-radius: 15px;
+	border: 1px solid set.$secondary;
+}
+
+.skill__icons {
+  font-size: 50px;
+}
+
+.skill__title {
+  font-size: map-get(set.$font-sizes, small);
+}
+
+.skill__description {
+  color: set.$paragraph;
 }

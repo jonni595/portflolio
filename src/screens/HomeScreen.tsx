@@ -1,7 +1,7 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { Avatar, Badge, Button, Card } from "../components";
+import { Avatar, Badge, Button, Card, SkillsCard } from "../components";
 import { getLimit } from "../utils/getLimit";
-import { projects } from "../utils/model";
+import { projects, technologies } from "../utils/model";
 
 const HomeScreen = () => {
   const [text] = useTypewriter({
@@ -48,7 +48,16 @@ const HomeScreen = () => {
           )
         )}
       </section>
-      <section className="skills"></section>
+      <section className="skills">
+        {technologies.map((tech) => (
+          <SkillsCard
+          key={tech.id}
+          title={tech.name}
+          description={tech.description}
+          Icon={tech.icon}
+          />
+        ))}
+      </section>
     </>
   );
 };

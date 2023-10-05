@@ -101,7 +101,7 @@ type PropsIcons = {
   alt: string;
 };
 
-export const icons: PropsIcons[] = [
+export const technologies: PropsIcons[] = [
   {
     id: 1,
     name: "HTML",

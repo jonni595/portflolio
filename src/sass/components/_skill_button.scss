@@ -1,6 +1,10 @@
-.button {
+@use '../utils' as set;
+
+.skill_button {
   border: none;
-  padding: 5px 10px;
+  padding: 8px 15px;
+  background-color: set.$tertiary;
+  font-size: map-get(set.$font-sizes, x-small);
   border-radius: 50px;
   cursor: pointer;
   user-select: none;
