@@ -33,7 +33,7 @@ interface Card {
 
 export const projects: Card[] = [
   {
-    id: 0,
+    id: 1,
     title: "Quiz App",
     imageUrl: `${Quiz}`,
     altImg: "Project 1",
@@ -43,7 +43,7 @@ export const projects: Card[] = [
     projectUrl: "https://jonni595.github.io/quiz-app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Todo List",
     imageUrl: `${Todo}`,
     altImg: "Project 2",
@@ -53,7 +53,7 @@ export const projects: Card[] = [
     projectUrl: "https://jonni595.github.io/todo-list/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Movie App",
     imageUrl: `${Movie}`,
     altImg: "Project 3",
@@ -63,7 +63,7 @@ export const projects: Card[] = [
     projectUrl: "https://jonni595.github.io/movie-app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Calculator",
     imageUrl: `${Calc}`,
     altImg: "Project 4",
@@ -73,7 +73,7 @@ export const projects: Card[] = [
     projectUrl: "https://jonni595.github.io/calculator/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Form Validation",
     imageUrl: `${Form}`,
     altImg: "Project 5",
@@ -83,7 +83,7 @@ export const projects: Card[] = [
     projectUrl: "https://jonni595.github.io/validation-form/",
   },
   {
-    id: 5,
+    id: 6,
     title: "YouTube Clone",
     imageUrl: `${YouTube}`,
     altImg: "Project 6",
