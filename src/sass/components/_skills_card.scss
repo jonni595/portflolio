@@ -1,7 +1,7 @@
 @use '../utils' as set;
 
 .skill__card {
-  @include set.dimensions(150px, 200px);
+  @include set.dimensions(150px, 180px);
   @include set.center-element(column, center, space-evenly);
   border-radius: 15px;
 	border: 1px solid set.$secondary;
