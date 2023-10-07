@@ -12,7 +12,7 @@ html {
   scrollbar-width: thin;
 }
 html::-webkit-scrollbar {
-  width: 1em;
+  width: 0.7em;
 }
 html::-webkit-scrollbar-thumb {
   background: #72757e;
