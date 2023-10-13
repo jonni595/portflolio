@@ -80,4 +80,15 @@
   padding: 40px 30px;
   gap: 40px;
 
+  @media (width <= 780px) {
+    @include set.dimensions(100%, 700px);
+  }
+
+  @media (width <= 592px) {
+    @include set.dimensions(100%, 900px);
+  }
+
+  @media (width <= 400px) {
+    @include set.dimensions(100%, 1600px);
+  }
 }
