@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 interface ButtonProps {
   langs: string[];
 }
@@ -5,8 +7,8 @@ interface ButtonProps {
 const Badge: React.FC<ButtonProps> = ({ langs }) => {
   return (
     <>
-      {langs.map((lang, i) => (
-        <span key={i} className="badge">
+      {langs.map((lang) => (
+        <span key={uuidv4()} className="badge">
           {lang}
         </span>
       ))}
