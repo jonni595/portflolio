@@ -30,7 +30,7 @@ export const initialState: Props = {
 };
 
 interface Card {
-  id: number;
+  id: number | string;
   title: string;
   imageUrl: string;
   altImg: string;
@@ -111,7 +111,7 @@ export const projects: Card[] = [
 ];
 
 type PropsIcons = {
-  id: number;
+  id: number | string;
   name: string;
   icon: IconType;
   description: string;
