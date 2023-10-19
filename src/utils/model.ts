@@ -58,7 +58,7 @@ export const projects: Card[] = [
     paragraph:
       "A Todo list app made in React is a web application that allows users to create and manage a to-do list",
     languages: ["HTML", "CSS", "DOM/JS"],
-    projectUrl: "https://singular-biscochitos-323bdc.netlify.app/",
+    projectUrl: "https://iridescent-macaron-a5e067.netlify.app/",
   },
   {
     id: uuidv4(),
