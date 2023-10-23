@@ -16,7 +16,6 @@ const HomeScreen = () => {
       <section className="profile">
         <div className="profile__item">
           <img src={Avatar} alt="Avatar logo" className="profile__image" />
-          {/* <Avatar /> */}
           <h1 className="profile__title">
             {text} <Cursor />
           </h1>
