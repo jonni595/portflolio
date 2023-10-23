@@ -276,6 +276,18 @@ svg {
   width: 300px;
   height: 300px;
 }
+@media (width <= 768px) {
+  .profile__item .profile__image {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (width <= 510px) {
+  .profile__item .profile__image {
+    width: 200px;
+    height: 200px;
+  }
+}
 .profile__item .profile__title {
   font-size: 5rem;
   font-weight: 600;

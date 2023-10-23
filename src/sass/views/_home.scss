@@ -10,6 +10,14 @@
 
     .profile__image {
       @include set.dimensions(300px, 300px);
+
+      @media (width <= 768px) {
+        @include set.dimensions(250px, 250px);
+      }
+
+      @media (width <= 510px) {
+        @include set.dimensions(200px, 200px);
+      }
     }
 
     .profile__title {
