@@ -8,6 +8,10 @@
     @include set.center-element(column, center, space-evenly);
     @include set.dimensions(800px, 500px);
 
+    .profile__image {
+      @include set.dimensions(300px, 300px);
+    }
+
     .profile__title {
       font-size: map-get(set.$font-sizes, x-large);
       font-weight: map-get(set.$font-weight, large);

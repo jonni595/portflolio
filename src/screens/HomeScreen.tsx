@@ -1,7 +1,8 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { Avatar, Badge, Button, Card, SkillsCard } from "../components";
+import { Badge, Button, Card, SkillsCard } from "../components";
 import { getLimit } from "../utils/getLimit";
 import { projects, technologies } from "../utils/model";
+import Avatar from "../assets/Img_Avatar-min.png";
 
 const HomeScreen = () => {
   const [text] = useTypewriter({
@@ -14,7 +15,8 @@ const HomeScreen = () => {
     <>
       <section className="profile">
         <div className="profile__item">
-          <Avatar />
+          <img src={Avatar} alt="Avatar logo" className="profile__image" />
+          {/* <Avatar /> */}
           <h1 className="profile__title">
             {text} <Cursor />
           </h1>
@@ -51,10 +53,10 @@ const HomeScreen = () => {
       <section className="skills">
         {technologies.map((tech) => (
           <SkillsCard
-          key={tech.id}
-          title={tech.name}
-          description={tech.description}
-          Icon={tech.icon}
+            key={tech.id}
+            title={tech.name}
+            description={tech.description}
+            Icon={tech.icon}
           />
         ))}
       </section>
