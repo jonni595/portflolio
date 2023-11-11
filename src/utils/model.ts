@@ -18,6 +18,7 @@ import YouTube from "../assets/Img_YT-min.png";
 import Netflix from "../assets/Img_Netflix-min.png";
 import ThemeClock from "../assets/Img_ThemeClock-min.png";
 
+let next = 1;
 interface Props {
   firstName: string;
   email: string;
@@ -45,7 +46,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "Quiz App",
     imageUrl: `${Quiz}`,
-    altImg: "Project 1",
+    altImg: `Project ${next++}`,
     paragraph:
       "Challenge your knowledge and show how much you know about web development",
     languages: ["HTML", "CSS", "Vanilla JS"],
@@ -55,7 +56,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "Todo List",
     imageUrl: `${Todo}`,
-    altImg: "Project 2",
+    altImg: `Project ${next++}`,
     paragraph:
       "A Todo list app made in React is a web application that allows users to create and manage a to-do list",
     languages: ["HTML", "CSS", "DOM/JS"],
@@ -65,7 +66,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "Movie App",
     imageUrl: `${Movie}`,
-    altImg: "Project 3",
+    altImg: `Project ${next++}`,
     paragraph:
       "An application for film lovers who want to find information about movies",
     languages: ["Vanilla JS", "API REST", "CSS"],
@@ -75,7 +76,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "Calculator",
     imageUrl: `${Calc}`,
-    altImg: "Project 4",
+    altImg: `Project ${next++}`,
     paragraph:
       "Web application that allows you to perform basic mathematical operations",
     languages: ["HTML", "SASS", "CSS"],
@@ -85,7 +86,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "Form Validation",
     imageUrl: `${Form}`,
-    altImg: "Project 5",
+    altImg: `Project ${next++}`,
     paragraph:
       "It is a form that verifies that the data entered by the user is correct",
     languages: ["HTML", "React", "SASS"],
@@ -95,7 +96,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "YouTube Clone",
     imageUrl: `${YouTube}`,
-    altImg: "Project 6",
+    altImg: `Project ${next++}`,
     paragraph: "A replica of the most popular video platform on the Internet",
     languages: ["HTML", "SASS", "CSS"],
     projectUrl: "https://jonni595.github.io/youtube-clone/",
@@ -104,7 +105,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "Netflix Clone",
     imageUrl: `${Netflix}`,
-    altImg: "Project 7",
+    altImg: `Project ${next++}`,
     paragraph:
       "A replica of the most popular streaming platform on the Internet",
     languages: ["HTML", "SASS", "CSS"],
@@ -114,7 +115,7 @@ export const projects: Card[] = [
     id: uuidv4(),
     title: "Theme Clock",
     imageUrl: `${ThemeClock}`,
-    altImg: "Project 8",
+    altImg: `Project ${next++}`,
     paragraph:
       "View the current time and change the page theme to light or dark mode.",
     languages: ["React", "API useContext", "SASS"],
