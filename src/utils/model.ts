@@ -99,7 +99,7 @@ export const projects: Card[] = [
     altImg: `Project ${next++}`,
     paragraph: "A replica of the most popular video platform on the Internet",
     languages: ["HTML", "SASS", "CSS"],
-    projectUrl: "https://jonni595.github.io/youtube-clone/",
+    projectUrl: "https://yt-clone-jd.netlify.app/",
   },
   {
     id: uuidv4(),
@@ -109,7 +109,7 @@ export const projects: Card[] = [
     paragraph:
       "A replica of the most popular streaming platform on the Internet",
     languages: ["HTML", "SASS", "CSS"],
-    projectUrl: "https://jonni595.github.io/netflix-clone/",
+    projectUrl: "https://netflix-jd.netlify.app/",
   },
   {
     id: uuidv4(),
