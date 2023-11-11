@@ -16,6 +16,7 @@ import Calc from "../assets/Img_Calc-min.png";
 import Form from "../assets/Img_Form-min.png";
 import YouTube from "../assets/Img_YT-min.png";
 import Netflix from "../assets/Img_Netflix-min.png";
+import ThemeClock from "../assets/Img_ThemeClock-min.png";
 
 interface Props {
   firstName: string;
@@ -108,6 +109,16 @@ export const projects: Card[] = [
       "A replica of the most popular streaming platform on the Internet",
     languages: ["HTML", "SASS", "CSS"],
     projectUrl: "https://jonni595.github.io/netflix-clone/",
+  },
+  {
+    id: uuidv4(),
+    title: "Theme Clock",
+    imageUrl: `${ThemeClock}`,
+    altImg: "Project 8",
+    paragraph:
+      "View the current time and change the page theme to light or dark mode.",
+    languages: ["React", "API useContext", "SASS"],
+    projectUrl: "https://use-theme-clock.netlify.app/",
   },
 ];
 
