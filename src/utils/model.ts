@@ -89,8 +89,8 @@ export const projects: Card[] = [
     altImg: `Project ${next++}`,
     paragraph:
       "It is a form that verifies that the data entered by the user is correct",
-    languages: ["HTML", "React", "SASS"],
-    projectUrl: "https://jonni595.github.io/validation-form/",
+    languages: ["React", "useContext", "SASS"],
+    projectUrl: "validation-form-jd.netlify.app",
   },
   {
     id: uuidv4(),
