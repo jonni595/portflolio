@@ -59,7 +59,7 @@ export const projects: Card[] = [
     altImg: `Project ${next++}`,
     paragraph:
       "A Todo list app made in React is a web application that allows users to create and manage a to-do list",
-    languages: ["HTML", "CSS", "DOM/JS"],
+    languages: ["HTML", "CSS", "DOM"],
     projectUrl: "https://iridescent-macaron-a5e067.netlify.app/",
   },
   {
@@ -89,7 +89,7 @@ export const projects: Card[] = [
     altImg: `Project ${next++}`,
     paragraph:
       "It is a form that verifies that the data entered by the user is correct",
-    languages: ["React", "useContext", "SASS"],
+    languages: ["React", "Hooks", "SASS"],
     projectUrl: "https://validation-form-jd.netlify.app/",
   },
   {
