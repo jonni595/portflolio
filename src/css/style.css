@@ -605,6 +605,9 @@ svg {
 .contact__container form textarea:focus {
   outline: 2px solid #72757e;
 }
+.contact__container form textarea {
+  resize: none;
+}
 .contact__container form button {
   margin-top: 15px;
   padding: 10px;

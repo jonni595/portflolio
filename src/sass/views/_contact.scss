@@ -29,30 +29,33 @@
         margin-top: 15px;
         padding: 10px;
         border: 2px solid set.$secondary;
-				background-color: set.$card-bg;
+        background-color: set.$card-bg;
         font-size: map-get(set.$font-sizes, small);
-				font-weight: map-get(set.$font-weight, s-medium);
+        font-weight: map-get(set.$font-weight, s-medium);
 
         &:focus {
           outline: 2px solid set.$secondary;
         }
       }
 
-			button {
-				margin-top: 15px;
-				padding: 10px;
+      textarea {
+        resize: none;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px;
         font-size: map-get(set.$font-sizes, small);
-				font-weight: map-get(set.$font-weight, medium);
-				border: 2px solid set.$secondary;
-				cursor: pointer;
-				transition: all .2s ease-in;
+        font-weight: map-get(set.$font-weight, medium);
+        border: 2px solid set.$secondary;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
 
-				&:hover {
-					background-color: set.$bg-button;
-					border: 2px solid set.$bg-button;
-				}
-			}
-
+        &:hover {
+          background-color: set.$bg-button;
+          border: 2px solid set.$bg-button;
+        }
+      }
     }
   }
 }
