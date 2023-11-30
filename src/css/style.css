@@ -313,7 +313,7 @@ svg {
 .profile__item .profile__subtitle {
   font-size: 2rem;
   color: #72757e;
-  font-weight: 200;
+  font-weight: 300;
 }
 @media (width <= 768px) {
   .profile__item .profile__subtitle {

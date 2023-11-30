@@ -46,7 +46,7 @@
     .profile__subtitle {
       font-size: map-get(set.$font-sizes, medium);
       color: set.$secondary;
-      font-weight: map-get(set.$font-weight, small);
+      font-weight: map-get(set.$font-weight, s-medium);
 
       @media (width <= 768px) {
         font-size: map-get(set.$font-sizes, small);
