@@ -6,3 +6,4 @@ export * from "./Card";
 export * from "./Footer";
 export * from "./SkillsCard";
 export * from "./SkillButton";
+export * from "./PageNotFound";
