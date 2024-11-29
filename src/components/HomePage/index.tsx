@@ -1,3 +1,4 @@
+import Avatar from "../Avatar";
 import Navbar from "../Navbar";
 import "./Home.css";
 
@@ -5,7 +6,7 @@ const HomePage = () => {
   return (
     <div className="home" id="home">
       <Navbar />
-      {/* Avatar */}
+      <Avatar />
     </div>
   );
 };
