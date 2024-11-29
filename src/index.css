@@ -1,3 +1,7 @@
+:root {
+  --primary: #fffffe;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +18,7 @@ html {
 
 body {
   min-height: 100dvh;
-  background-color: #1e1e1e;
-  color: #f0f0f0;
+  background-color: var(--primary);
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
@@ -71,7 +74,6 @@ label {
 }
 
 svg {
-  width: 100%;
   display: block;
   fill: currentColor;
 }
