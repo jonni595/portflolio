@@ -16,6 +16,7 @@ const Project = () => {
               title={project.title}
               url={project.url}
               badge={project.badge}
+              github={project.github}
             />
           ))}
         </div>
