@@ -1,6 +1,7 @@
 :root {
   --card-text: #fffffe;
   --card-badge: #ff5470;
+  --hightlight: #00ebc7;
 }
 
 .card {
@@ -71,6 +72,10 @@
   font-size: 2rem;
   color: var(--card-text);
   text-decoration: none;
+}
+
+.card-overview a:hover {
+  color: var(--hightlight);
 }
 
 .card-info {
