@@ -19,7 +19,7 @@ interface Projects {
   title: string;
   url: string;
   badge: string[];
-  github?: string;
+  github: string;
 }
 
 export const projects: Projects[] = [
