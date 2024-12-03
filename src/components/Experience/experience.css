@@ -1,0 +1,23 @@
+.experience {
+  --bg-color: #fffffe;
+  background: var(--bg-color);
+}
+
+.experience-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-wrapper h1 {
+  --title: #00214d;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--title);
+  margin-bottom: 10px;
+  text-align: center;
+}

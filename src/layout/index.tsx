@@ -1,3 +1,4 @@
+import Experience from "../components/Experience";
 import HomePage from "../components/HomePage";
 import Project from "../components/ProjectPage";
 import "./layout.css";
@@ -7,7 +8,7 @@ const Layout = () => {
     <section className="layout">
       <HomePage />
       <Project />
-      <div>3</div>
+      <Experience />
       <div>4</div>
     </section>
   );
