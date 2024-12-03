@@ -14,15 +14,17 @@ const Card: React.FC<Props> = ({ title, url, badge, github }) => {
       <div className="card-image">
         <img src={url} alt={title} />
         <div className="card-overview">
-          <a href={github} target="_blank" rel="noreferrer">
+          <a href={github} target="_blank" rel="noreferrer noopener">
             <SiNetlify />
           </a>
-          <h3>{title}</h3>
+          <h3 className="card-title">{title}</h3>
         </div>
       </div>
       <div className="card-info">
         {badge.map((badge) => (
-          <span key={badge}>{badge}</span>
+          <span className="badge" key={badge}>
+            {badge}
+          </span>
         ))}
       </div>
     </div>

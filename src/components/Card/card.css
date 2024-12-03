@@ -1,7 +1,7 @@
 :root {
   --card-text: #fffffe;
-  --card-badge: #ff5470;
   --hightlight: #00ebc7;
+  --bg-badge: #00214d;
 }
 
 .card {
@@ -44,7 +44,7 @@
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   opacity: 0;
   transition: all 0.3s ease;
@@ -63,7 +63,7 @@
   transform: translateY(0);
 }
 
-.card-overview h3 {
+.card-title {
   font-size: 1.2rem;
   color: var(--card-text);
 }
@@ -71,7 +71,6 @@
 .card-overview a {
   font-size: 2rem;
   color: var(--card-text);
-  text-decoration: none;
 }
 
 .card-overview a:hover {
@@ -87,7 +86,10 @@
   padding: 8px;
 }
 
-.card-info span {
+.badge {
   font-size: 0.8rem;
-  color: var(--card-badge);
+  color: var(--card-text);
+  padding: 4px 8px;
+  background: var(--bg-badge);
+  border-radius: 3px;
 }
