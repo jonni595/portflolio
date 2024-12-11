@@ -1,7 +1,8 @@
 :root {
   --card-text: #fffffe;
   --hightlight: #00ebc7;
-  --bg-badge: #00214d;
+  --bg-badge: #383a59;
+  --card: #282a36;
 }
 
 .card {
@@ -11,8 +12,10 @@
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background: var(--card);
   border-radius: 3px;
+  padding: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -83,7 +86,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 8px;
 }
 
 .badge {

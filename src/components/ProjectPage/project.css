@@ -1,6 +1,6 @@
 :root {
-  --main: #f2f4f6;
-  --title: #00214d;
+  --main: #0f0e17;
+  --title: #fffffe;
 }
 
 .container {
@@ -37,6 +37,9 @@
 @media (width <= 930px) {
   .projects {
     justify-content: center;
+  }
+  .wrapper h1 {
+    text-align: center;
   }
 }
 

@@ -67,3 +67,20 @@
 .button:hover {
   background-color: #5334e8;
 }
+
+@media (width <= 930px) {
+  .avatar {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .avatar-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .avatar-name {
+    font-size: 3rem;
+  }
+}
