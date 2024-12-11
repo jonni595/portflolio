@@ -1,6 +1,6 @@
 :root {
-  --primary: #fffffe;
-  --headline: #2b2c34;
+  --button-text: #fffffe;
+  --headline: #fffffe;
   --text: #1b2d45;
   --button: #6246ea;
 }
@@ -57,7 +57,7 @@
   border: none;
   border-radius: 10px;
   background-color: var(--button);
-  color: var(--primary);
+  color: var(--button-text);
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
