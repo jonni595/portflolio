@@ -1,15 +1,8 @@
 import { useEffect, useState } from "react";
-import {
-  IoIosMoon,
-  IoIosSunny,
-  IoIosHome,
-  IoIosBriefcase,
-  IoMdChatbubbles,
-} from "react-icons/io";
+import { IoIosHome, IoIosBriefcase, IoMdChatbubbles } from "react-icons/io";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [isDark, setIsDark] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
@@ -31,9 +24,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <span className="logo">
-        <a href="#home" className="logo-link"></a>
-      </span>
       <ul className="navbar-list">
         <li>
           <a
@@ -63,11 +53,6 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      {isDark ? (
-        <IoIosSunny className="icon" onClick={() => setIsDark(false)} />
-      ) : (
-        <IoIosMoon className="icon" onClick={() => setIsDark(true)} />
-      )}
     </nav>
   );
 };
