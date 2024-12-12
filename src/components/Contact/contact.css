@@ -1,0 +1,13 @@
+.contact {
+  --bg-color: #0f0e17;
+  background: var(--bg-color);
+}
+
+.contact-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+}

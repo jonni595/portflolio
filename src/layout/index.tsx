@@ -1,3 +1,4 @@
+import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import HomePage from "../components/HomePage";
 import Project from "../components/ProjectPage";
@@ -9,7 +10,7 @@ const Layout = () => {
       <HomePage />
       <Project />
       <Experience />
-      <div>4</div>
+      <Contact />
     </section>
   );
 };
