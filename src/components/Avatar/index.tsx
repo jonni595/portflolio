@@ -20,10 +20,20 @@ const Avatar = () => {
           I'm <span className="avatar-job-text">{text}</span> <Cursor />
         </p>
         <div className="avatar-social">
-          <a className="button" href="#">
+          <a
+            className="button"
+            href="https://github.com/jonni595"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Github
           </a>
-          <a className="button" href="#">
+          <a
+            className="button"
+            href="https://www.linkedin.com/in/jonathan-dajome-rodriguez-7801b21b0/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             LinkedIn
           </a>
         </div>
