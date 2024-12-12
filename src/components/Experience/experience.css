@@ -1,5 +1,5 @@
 .experience {
-  --bg-color: #fffffe;
+  --bg-color: #1d1e26;
   background: var(--bg-color);
 }
 
@@ -14,7 +14,7 @@
 }
 
 .experience-wrapper h1 {
-  --title: #00214d;
+  --title: #fffffe;
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--title);
