@@ -91,7 +91,7 @@
 .badge {
   font-size: 0.8rem;
   color: var(--card-text);
-  padding: 4px 8px;
+  padding: 6px 10px;
   background: var(--bg-badge);
   border-radius: 3px;
 }
