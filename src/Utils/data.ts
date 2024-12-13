@@ -1,3 +1,12 @@
+import { IconType } from "react-icons";
+import {
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoJavascript,
+  IoLogoReact,
+  IoLogoSass,
+  IoLogoNodejs,
+} from "react-icons/io5";
 import Todo from "../assets/Todo-list-min.png";
 import Movie from "../assets/Movie-app-min.png";
 import Clock from "../assets/Clock-min.png";
@@ -58,5 +67,37 @@ export const projects: Projects[] = [
     url: Todo,
     badge: ["React", "TypeScript", "Context API"],
     github: "https://todo-list-app-jd.netlify.app/",
+  },
+];
+
+interface SkillsProps {
+  title: string;
+  icon: IconType;
+}
+
+export const skillsData: SkillsProps[] = [
+  {
+    title: "React",
+    icon: IoLogoReact,
+  },
+  {
+    title: "HTML",
+    icon: IoLogoHtml5,
+  },
+  {
+    title: "CSS",
+    icon: IoLogoCss3,
+  },
+  {
+    title: "Javascript",
+    icon: IoLogoJavascript,
+  },
+  {
+    title: "Sass",
+    icon: IoLogoSass,
+  },
+  {
+    title: "Node",
+    icon: IoLogoNodejs,
   },
 ];
