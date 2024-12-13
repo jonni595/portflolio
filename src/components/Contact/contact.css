@@ -9,5 +9,12 @@
   height: 500px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 50px auto;
+}
+
+@media (width <= 930px) {
+  .contact-wrapper {
+    justify-content: center;
+  }
 }
