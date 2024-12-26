@@ -1,0 +1,51 @@
+.container-skills {
+  width: 400px;
+  height: 350px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+}
+
+.container-skills:hover div > * {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.container-skills div:nth-child(1):hover {
+  --react: #61dafb;
+  color: var(--react);
+}
+
+.container-skills div:nth-child(2):hover {
+  --html: #e44d26;
+  color: var(--html);
+}
+
+.container-skills div:nth-child(3):hover {
+  --css: #264de4;
+  color: var(--css);
+}
+
+.container-skills div:nth-child(4):hover {
+  --js: #f7df1e;
+  color: var(--js);
+}
+
+.container-skills div:nth-child(5):hover {
+  --sass: #cd669a;
+  color: var(--sass);
+}
+
+.container-skills div:nth-child(6):hover {
+  --node: #3c873a;
+  color: var(--node);
+}
+
+@media (width <= 930px) {
+  .container-skills {
+    display: none;
+  }
+}
