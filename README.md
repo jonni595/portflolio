@@ -1,7 +1,5 @@
 # Portfolio
 
-========================
-
 **Nombre del Proyecto**: Portafolio de Jonathan Dajome
 
 **Descripción del Proyecto**: El proyecto es un portafolio personal que muestra la experiencia y habilidades de Jonathan Dajome como desarrollador frontend. El sitio web presenta información sobre su trayectoria profesional y muestra varios proyectos personales desarrollados por él.
