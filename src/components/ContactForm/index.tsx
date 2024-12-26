@@ -1,11 +1,11 @@
-import { Toaster, toast } from "sonner";
+import { useRef } from "react";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { Toaster, toast } from "sonner";
 import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
-import { useForm } from "react-hook-form";
 import { contactSchema } from "../../Utils/schema";
 import "./ContactForm.css";
-import { useRef } from "react";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -33,8 +33,6 @@ const ContactForm = () => {
     } catch (error) {
       if (error instanceof Error) {
         toast.error(error.message);
-      } else {
-        console.log(error);
       }
     }
   };
