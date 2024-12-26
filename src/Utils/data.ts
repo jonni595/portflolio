@@ -14,13 +14,7 @@ import Game from "../assets/Game-hub-min.png";
 import Form from "../assets/Validation-form-min.png";
 import Weather from "../assets/Weather-app-min.png";
 
-const skills = [
-  "React",
-  "Fetch API",
-  "UX/UI",
-  "Bootstrap",
-  "Tailwind",
-] as const;
+const skills = ["React", "API", "UX/UI", "Bootstrap", "Tailwind"] as const;
 
 export default skills;
 
@@ -29,6 +23,7 @@ interface Projects {
   url: string;
   badge: string[];
   github: string;
+  category?: string;
 }
 
 export const projects: Projects[] = [
@@ -37,36 +32,42 @@ export const projects: Projects[] = [
     url: Game,
     badge: ["Axios", "Chakra UI", "Framer Motion"],
     github: "https://game-hub-jd.netlify.app/",
+    category: "API",
   },
   {
     title: "Movie App",
     url: Movie,
     badge: ["React", "Styled Components", "TMDB API"],
     github: "https://movie-app-jd.netlify.app/",
+    category: "React",
   },
   {
     title: "Form Validation",
     url: Form,
     badge: ["React", "TypeScript", "State Management"],
     github: "https://validation-form-jd.netlify.app/",
+    category: "React",
   },
   {
     title: "Clock",
     url: Clock,
     badge: ["React", "TypeScript", "Context API"],
     github: "https://theme-clock-jd.netlify.app/",
+    category: "React",
   },
   {
     title: "Weather App",
     url: Weather,
     badge: ["React", "TypeScript", "Open Weather API"],
     github: "https://app-weather-jd.netlify.app/",
+    category: "API",
   },
   {
     title: "Todo List",
     url: Todo,
     badge: ["React", "TypeScript", "Context API"],
     github: "https://todo-list-app-jd.netlify.app/",
+    category: "React",
   },
 ];
 
